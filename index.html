@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gator</title>
+<link rel="icon" href="assets/images/waterdrop.png" type="image/png"> 
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css"> 
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="navbar-fixed right">
+    <div id = "signIn">
+      <a class="waves-effect waves-light btn" id = "google">Sign in with Google</a>
+    </div>
+</div>
+<div class="container center-align">
+    <img class="logo" src = "assets/images/gator.png">
+</div>
+
+<!-- SEARCH --> 
+
+  <nav>
+    <div class="nav-wrapper">
+      <form>
+        <div class="input-field">
+          <input id="search" type="search" required>
+          <label for="search" id = "searchButton"><i class="material-icons">search</i></label>
+          <i class="material-icons">close</i>
+        </div>
+      </form>
+    </div>
+  </nav>
+
+<!--BEGIN CONTENT AREA-->
+<div class="row padded-row">
+    <!--NPR CONTENT-->        
+    <div class="col s12 m4 lg4 custom-media">
+        <div class="card blue-grey">
+            <div class="card-content">
+                <img src="assets/images/nprlogo.png" alt="npr"  class="topiconNPR" height="38%" width="38%">
+                <div class="card-action" id="scrollbox">
+                <ul class = "collection" id = "npr">
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--REDDIT CONTENT-->        
+    <div class="col s12 m4 lg4 custom-media">
+        <div class="card blue-grey">
+            <div class="card-content">
+                <img src="assets/images/redditlogo.png" alt="redditicon"  class="topiconRED" height="45%" width="45%">
+                <div class="card-action" id="scrollbox">
+                <ul class = "collection" id = "reddit">
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--NYT CONTENT-->
+    <div class="col s12 m4 lg4 custom-media">
+        <div class="card blue-grey">
+            <div class="card-content">
+                <img src="assets/images/nytimes.png" alt="NYTicon"  class="topiconNY" height="75%" width="75%">
+                <div class="card-action" id="scrollbox">
+                <ul class = "collection" id = "nyt">
+                </ul>
+                </div>
+            </div>
+    </div>
+    </div>
+</div>
+
+<!--Import JS-->
+<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/c58099c32b.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/ui/live/0.5/firebase-ui-auth.js"></script>
+<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/live/0.5/firebase-ui-auth.css" />
+<script src="assets/js/gator.js"></script>
+</body>
+</html>
